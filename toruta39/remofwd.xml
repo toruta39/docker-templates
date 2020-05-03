@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/remofwd.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>Utils</Category>
+  <Name>Remofwd</Name>
+  <Description>
+    Remo datapoint forwarder
+  </Description>
+  <Overview>
+    Remo datapoint forwarder
+  </Overview>
+  <Registry>https://registry.hub.docker.com/r/toruta39/remofwd</Registry>
+  <Github>https://github.com/toruta39/remofwd</Github>
+  <Repository>toruta39/remofwd</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>API_TOKEN</Name>
+      <Value>replace-your-api-token-here</Value>
+    </Variable>
+    <Variable>
+      <Name>INFLUXDB_CONN</Name>
+      <Value>http://192.168.0.1:8086</Value>
+    </Variable>
+    <Variable>
+      <Name>INFLUXDB_DB</Name>
+      <Value>remo</Value>
+    </Variable>
+  </Environment>
+  <Icon>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/images/remofwd.png</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
