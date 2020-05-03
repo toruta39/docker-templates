@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/remofwd.xml</TemplateURL>
-  <Beta>True</Beta>
+  <Beta>False</Beta>
   <Category>Utils</Category>
   <Name>Remofwd</Name>
   <Description>
