@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/browserless.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Utils</Category>
+  <Name>browserless</Name>
+  <Description>
+    browserless chrome
+  </Description>
+  <Overview>
+    browserless chrome
+  </Overview>
+  <Registry>https://registry.hub.docker.com/r/browserless/chrome</Registry>
+  <Github>https://github.com/browserless/chrome</Github>
+  <Repository>browserless/chrome</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Icon>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/images/browserless.png</Icon>
+  <WebUI>http://[IP]:[PORT:3000]/web/index.html</WebUI>
+  <ExtraParams></ExtraParams>
+</Containers>

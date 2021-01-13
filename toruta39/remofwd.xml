@@ -3,12 +3,12 @@
   <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/remofwd.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Utils</Category>
-  <Name>Remofwd</Name>
+  <Name>remofwd</Name>
   <Description>
-    Remo datapoint forwarder
+    nature remo datapoint forwarder, supports influxdb
   </Description>
   <Overview>
-    Remo datapoint forwarder
+    nature remo datapoint forwarder, supports influxdb
   </Overview>
   <Registry>https://registry.hub.docker.com/r/toruta39/remofwd</Registry>
   <Github>https://github.com/toruta39/remofwd</Github>
