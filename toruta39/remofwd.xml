@@ -1,37 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/remofwd.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Utils</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>remofwd</Name>
-  <Description>
-    nature remo datapoint forwarder, supports influxdb
-  </Description>
-  <Overview>
-    nature remo datapoint forwarder, supports influxdb
-  </Overview>
-  <Registry>https://registry.hub.docker.com/r/toruta39/remofwd</Registry>
-  <Github>https://github.com/toruta39/remofwd</Github>
   <Repository>toruta39/remofwd</Repository>
-  <BindTime>true</BindTime>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Nature remo datapoint forwarder, supports influxdb as data storage</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/images/remofwd.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611288574</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Nature remo datapoint forwarder, supports influxdb as data storage</Description>
   <Networking>
     <Mode>bridge</Mode>
+    <Publish/>
   </Networking>
+  <Data/>
   <Environment>
     <Variable>
+      <Value/>
       <Name>API_TOKEN</Name>
-      <Value>replace-your-api-token-here</Value>
+      <Mode/>
     </Variable>
     <Variable>
+      <Value>http://192.168.3.200:8086</Value>
       <Name>INFLUXDB_CONN</Name>
-      <Value>http://192.168.0.1:8086</Value>
+      <Mode/>
     </Variable>
     <Variable>
-      <Name>INFLUXDB_DB</Name>
       <Value>remo</Value>
+      <Name>INFLUXDB_DB</Name>
+      <Mode/>
     </Variable>
   </Environment>
-  <Icon>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/images/remofwd.png</Icon>
-  <ExtraParams></ExtraParams>
-</Containers>
+  <Labels/>
+  <Config Name="API Token" Target="API_TOKEN" Default="" Mode="" Description="Container Variable: API_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="InfluxDB Host" Target="INFLUXDB_CONN" Default="" Mode="" Description="Container Variable: INFLUXDB_CONN" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.3.200:8086</Config>
+  <Config Name="InfluxDB Database" Target="INFLUXDB_DB" Default="" Mode="" Description="Container Variable: INFLUXDB_DB" Type="Variable" Display="always" Required="false" Mask="false">remo</Config>
+</Container>
