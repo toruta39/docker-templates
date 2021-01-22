@@ -10,16 +10,17 @@
   <Support/>
   <Project/>
   <Overview>Check inventory status of product</Overview>
-  <Category>Tools:</Category>
+  <Category>Utils</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/tbfk.xml</TemplateURL>
   <Icon/>
   <ExtraParams>--restart always</ExtraParams>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1611285009</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>tbfk</Description>
+  <Description>Check inventory status of product</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
@@ -27,13 +28,23 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value>amazon|nojima|omni7|rakuten|yodobashi</Value>
+      <Value>rakuten</Value>
       <Name>SITE</Name>
       <Mode/>
     </Variable>
     <Variable>
       <Value/>
       <Name>PRODUCT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://foo@sentry.io/bar</Value>
+      <Name>SENTRY_DSN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://hooks.slack.com/services/foo/bar/baz</Value>
+      <Name>SLACK_WEBHOOK</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -66,26 +77,16 @@
       <Name>QUANTITY</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>https://foo@sentry.io/bar</Value>
-      <Name>SENTRY_DSN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>https://hooks.slack.com/services/foo/bar/baz</Value>
-      <Name>SLACK_WEBHOOK</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Host Key 1" Target="SITE" Default="" Mode="" Description="Container Variable: SITE" Type="Variable" Display="always" Required="false" Mask="false">amazon|nojima|omni7|rakuten|yodobashi</Config>
+  <Config Name="Host Key 1" Target="SITE" Default="rakuten|amazon|yodobashi|nojima|omni7" Mode="" Description="Container Variable: SITE" Type="Variable" Display="always" Required="false" Mask="false">rakuten</Config>
   <Config Name="Host Key 2" Target="PRODUCT" Default="" Mode="" Description="Container Variable: PRODUCT" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Host Key 3" Target="DEBUG" Default="0" Mode="" Description="Container Variable: DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
-  <Config Name="Host Key 4" Target="ORDER" Default="0" Mode="" Description="Container Variable: ORDER" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="Host Key 3" Target="SENTRY_DSN" Default="https://foo@sentry.io/bar" Mode="" Description="Container Variable: SENTRY_DSN" Type="Variable" Display="always" Required="false" Mask="false">https://foo@sentry.io/bar</Config>
+  <Config Name="Host Key 4" Target="SLACK_WEBHOOK" Default="https://hooks.slack.com/services/foo/bar/baz" Mode="" Description="Container Variable: SLACK_WEBHOOK" Type="Variable" Display="always" Required="false" Mask="false">https://hooks.slack.com/services/foo/bar/baz</Config>
+  <Config Name="Host Key 3" Target="DEBUG" Default="0|1" Mode="" Description="Container Variable: DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="Host Key 4" Target="ORDER" Default="0|1" Mode="" Description="Container Variable: ORDER" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
   <Config Name="Host Key 5" Target="INTERVAL" Default="3000" Mode="" Description="Container Variable: INTERVAL" Type="Variable" Display="advanced" Required="false" Mask="false">3000</Config>
   <Config Name="Host Key 6" Target="USER" Default="" Mode="" Description="Container Variable: USER" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Host Key 7" Target="PASSWORD" Default="" Mode="" Description="Container Variable: PASSWORD" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Host Key 8" Target="QUANTITY" Default="1" Mode="" Description="Container Variable: QUANTITY" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
-  <Config Name="Host Key 9" Target="SENTRY_DSN" Default="https://foo@sentry.io/bar" Mode="" Description="Container Variable: SENTRY_DSN" Type="Variable" Display="always" Required="false" Mask="false">https://foo@sentry.io/bar</Config>
-  <Config Name="Host Key 10" Target="SLACK_WEBHOOK" Default="https://hooks.slack.com/services/foo/bar/baz" Mode="" Description="Container Variable: SLACK_WEBHOOK" Type="Variable" Display="always" Required="false" Mask="false">https://hooks.slack.com/services/foo/bar/baz</Config>
 </Container>
