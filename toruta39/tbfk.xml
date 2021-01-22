@@ -79,7 +79,7 @@
   </Environment>
   <Labels/>
   <Config Name="Host Key 1" Target="SITE" Default="" Mode="" Description="Container Variable: SITE" Type="Variable" Display="always" Required="false" Mask="false">amazon|nojima|omni7|rakuten|yodobashi</Config>
-  <Config Name="Host Key 2" Target="PRODUCT" Default="" Mode="" Description="Container Variable: PRODUCT" Type="Variable" Display="always" Required="false" Mask="false" >
+  <Config Name="Host Key 2" Target="PRODUCT" Default="" Mode="" Description="Container Variable: PRODUCT" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Host Key 3" Target="DEBUG" Default="0" Mode="" Description="Container Variable: DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
   <Config Name="Host Key 4" Target="ORDER" Default="0" Mode="" Description="Container Variable: ORDER" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
   <Config Name="Host Key 5" Target="INTERVAL" Default="3000" Mode="" Description="Container Variable: INTERVAL" Type="Variable" Display="advanced" Required="false" Mask="false">3000</Config>
