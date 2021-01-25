@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mypass</Name>
+  <Repository>toruta39/mypass</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Regular check passport renewal reservation slot</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/mypass.xml</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611573862</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Regular check passport renewal reservation slot</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>PUPPETEER_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SLACK_WEBHOOK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>300000</Value>
+      <Name>MYPASS_INTERVAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MYPASS_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MYPASS_QUESTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MYPASS_ANSWER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MYPASS_DEBUG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SENTRY_DSN</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Key 1" Target="PUPPETEER_HOST" Default="ws://puppeteer:9222" Mode="" Description="Container Variable: PUPPETEER_HOST" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 2" Target="SLACK_WEBHOOK" Default="https://hooks.slack.com/services/" Mode="" Description="Container Variable: SLACK_WEBHOOK" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 3" Target="MYPASS_INTERVAL" Default="300000" Mode="" Description="Container Variable: MYPASS_INTERVAL" Type="Variable" Display="always" Required="false" Mask="false">300000</Config>
+  <Config Name="Key 4" Target="MYPASS_ID" Default="" Mode="" Description="Container Variable: MYPASS_ID" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 5" Target="MYPASS_QUESTION" Default="" Mode="" Description="Container Variable: MYPASS_QUESTION" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 6" Target="MYPASS_ANSWER" Default="" Mode="" Description="Container Variable: MYPASS_ANSWER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 7" Target="MYPASS_DEBUG" Default="0|1" Mode="" Description="Container Variable: MYPASS_DEBUG" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 8" Target="SENTRY_DSN" Default="" Mode="" Description="Container Variable: SENTRY_DSN" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
