@@ -1,31 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/browserless.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Utils</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>browserless</Name>
-  <Description>
-    browserless chrome
-  </Description>
-  <Overview>
-    browserless chrome
-  </Overview>
-  <Registry>https://registry.hub.docker.com/r/browserless/chrome</Registry>
-  <Github>https://github.com/browserless/chrome</Github>
   <Repository>browserless/chrome</Repository>
-  <BindTime>true</BindTime>
+  <Registry>https://registry.hub.docker.com/r/browserless/chrome</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>browserless chrome</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/browserless.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/images/browserless.png</Icon>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611576085</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>browserless chrome</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>3000</HostPort>
+        <HostPort>9222</HostPort>
         <ContainerPort>3000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Icon>https://raw.githubusercontent.com/toruta39/docker-templates/master/toruta39/images/browserless.png</Icon>
-  <WebUI>http://[IP]:[PORT:3000]/web/index.html</WebUI>
-  <ExtraParams></ExtraParams>
-</Containers>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="3000" Default="9222" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">9222</Config>
+</Container>
